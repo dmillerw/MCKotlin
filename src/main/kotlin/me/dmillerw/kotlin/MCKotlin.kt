@@ -9,7 +9,7 @@ import me.dmillerw.kotlin.proxy.CommonProxy
 import kotlin.platform.platformStatic
 import cpw.mods.fml.common.Mod.EventHandler as event
 
-Mod(modid = "MCKotlin", name = "MCKotlin", modLanguageAdapter = "me.dmillerw.kotlin.LanguageAdapter")
+Mod(modid = "MCKotlin", name = "MCKotlin", modLanguageAdapter = "me.dmillerw.kotlin.core.LanguageAdapter")
 class MCKotlin {
     companion object {
         SidedProxy(serverSide = "me.dmillerw.kotlin.proxy.CommonProxy", clientSide = "me.dmillerw.kotlin.proxy.ClientProxy")

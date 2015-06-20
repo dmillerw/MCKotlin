@@ -1,4 +1,4 @@
-package me.dmillerw.kotlin
+package me.dmillerw.kotlin.core
 
 import cpw.mods.fml.common.FMLModContainer
 import cpw.mods.fml.common.ILanguageAdapter

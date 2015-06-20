@@ -4,8 +4,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent
 import cpw.mods.fml.common.event.FMLPostInitializationEvent
 import cpw.mods.fml.common.event.FMLPreInitializationEvent
 import cpw.mods.fml.relauncher.Side
-
-import cpw.mods.fml.relauncher.SideOnly as sided;
+import me.dmillerw.kotlin.block.ModBlocks
+import cpw.mods.fml.relauncher.SideOnly as sided
 
 /**
  * @author dmillerw
@@ -14,7 +14,7 @@ import cpw.mods.fml.relauncher.SideOnly as sided;
 open class CommonProxy {
 
     open fun preInit(event: FMLPreInitializationEvent) {
-
+        ModBlocks.initialize();
     }
 
     open fun init(event: FMLInitializationEvent) {
@@ -26,17 +26,3 @@ open class CommonProxy {
     }
 }
 
-sided(Side.CLIENT) open class ClientProxy : CommonProxy() {
-
-    override fun preInit(event: FMLPreInitializationEvent) {
-        super.preInit(event);
-    }
-
-    override fun init(event: FMLInitializationEvent) {
-        super.init(event);
-    }
-
-    override fun postInit(event: FMLPostInitializationEvent) {
-        super.postInit(event);
-    }
-}
